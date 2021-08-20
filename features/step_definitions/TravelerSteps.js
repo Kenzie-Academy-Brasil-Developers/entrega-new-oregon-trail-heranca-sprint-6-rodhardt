@@ -10,7 +10,7 @@ Given('um Traveler de nome {string}', function (string) {
 });
 
 Given('ele sempre começa a viagem com {int} refeição', function (int) {
-    viajante.food = int;
+    viajante.foodQuantity = int;
 });
 
 Given('ele sempre começa a viagem saudável.', function () {
@@ -34,7 +34,7 @@ When('o Traveler parar para comer {int} vezes', function (int) {
 /** THEN */
 
 Then('a quantidade de refeições deve ser igual a {int}', function (int) {
-    assert.strictEqual(viajante.food, int);
+    assert.strictEqual(viajante.foodQuantity, int);
 });
 
 Then('o Traveler não ficará doente', function () {
