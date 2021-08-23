@@ -4,7 +4,7 @@ class Hunter extends Traveler {
 
     constructor(name) {
         super(name)
-        this._foodQuantity = 5
+        this._foodQuantity = 2
     }
 
     hunt = () => {
